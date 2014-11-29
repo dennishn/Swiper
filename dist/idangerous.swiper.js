@@ -1371,6 +1371,7 @@ var Swiper = function (selector, params) {
     }
     var velocityPrevPosition, velocityPrevTime;
     function onTouchMove(event) {
+        console.log('hej', event);
         // If slider is not touched - exit
         if (!_this.isTouched || params.onlyExternal) return;
         if (isTouchEvent && event.type === 'mousemove') return;
